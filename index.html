@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <style>
+
+    body {
+      background-image: url('images/purple.jpeg');
+    }
+    </style>
+  
+  <head>
+    <!-- Give your game / page a title! -->
+    <title> Hangman </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- This will load the script file AFTER the document is loaded -->
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>  
+    <h1 style="text-align:center"> Welcome to Hangman...</h1>
+    <h2 style="text-align:center"> Do you want to play!</h2>
+    <h3>Instructions</h3>
+    <img src="images/hangman.avif"
+      width="200px" height="200px">
+    <ol>
+        <li> The computer has picked a random 5-letter word  </li>
+        <li>The player, you, guesses the secret word one letter (lower case) at a time with limited guesses</li>
+      <li>To play again, refresh the page!</li>
+    </ol>
+
+    <h4>Click 'PLAY!' to play</h4>
+    
+    <a href="computer.html">
+    <button id="play" onclick="play()" >PLAY!</button></a>
+
+<br>
+
+    <a href="mathquiz.html">
+      <button id="mathquiz">Take a Math Quiz</button></a>
+
+
+
+    
+  </body>
+
+  
+</html>

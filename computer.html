@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+      
+  body {
+    background-image: url('images/sky-blue.png');
+  }
+
+    #word_display {
+      font-size: 24px;
+      margin-bottom: 20px;
+      }
+    #Letter_guess {
+      width: 30px;
+      text-align: center;
+      margin-right: 10px;
+    }
+    #message {
+      margin-top: 10px;
+    }
+      
+  </style>
+  
+  <head>
+    <!-- Give your game / page a title! -->
+    <title> Hangman </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- This will load the script file AFTER the document is loaded -->
+    <script src="script.js" defer></script> 
+
+  </head>
+  <body>
+
+    <h1>Hangman</h1>
+    <h3>Play!</h3>
+
+    <img src="images/have-fun.jpeg"
+       height="150px">
+  
+   <h4> Guess the secret word:</h4> 
+    <!-- this is where the player guesses the letters -->
+    <div id="word_display"></div>
+    
+    <input id ="letter_guess" type="text" maxlength="1">
+    <label for="letter_guess"> enter a letter</label>
+    <button onclick="letter_guess()">guess</button>
+    
+    <p id="message"></p>
+    
+    <br>
+    <br> 
+    <a href="index.html">
+      <button id="home">HOME</button></a>
+    
+  </body>  
+
+</html>
+    
